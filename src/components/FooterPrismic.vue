@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <a href="https://prismic.io" target="_blank" rel="noopener">
-      <img class="logo" src="../assets/img/prismic-logo.svg" alt="Prismic">
+      <img class="logo" src="http://labodessons.fr/wp-content/uploads/2013/10/fusionpizzabonne.jpg" alt="Prismic">
     </a>
   </footer>
 </template>
