@@ -4,19 +4,6 @@
     <header-prismic/>
     <!-- Button to edit document in dashboard -->
     <prismic-edit-button :documentId="documentId"/>
-    <section class="homepage-banner" :style="{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(' + fields.image + ')' }">
-      <!-- Template for page title. -->
-      <div class="banner-content container">
-        <h2 class="banner-title">
-          {{ $prismic.richTextAsPlain(fields.title) }}
-        </h2>
-        <!-- Template for page tagline -->
-        <p class="banner-description">{{ $prismic.richTextAsPlain(fields.tagline) }}</p>
-        <prismic-link class="banner-button" :field="fields.button_link">
-          {{ $prismic.richTextAsPlain(fields.button_label) }}
-        </prismic-link>
-      </div>
-    </section>
     <div class="container">
       <!-- Slices block component -->
       <slices-block :slices="slices"/>

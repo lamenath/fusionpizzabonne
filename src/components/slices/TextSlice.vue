@@ -27,6 +27,13 @@ export default {
 .text-section-2col p:last-child {
   margin-bottom: 0;
 }
+
+.text-section-null a,
+.text-section-null p,
+.text-section-1col p,
+.text-section-2col p {
+  color: white;
+}
 /* Media Queries */
 @media (max-width: 767px) {
   .text-section-2col {

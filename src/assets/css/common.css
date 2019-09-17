@@ -8,10 +8,16 @@
   background: #FFF7C7; /* Gecko Browsers */
 }
 
+full-width-image content-section {
+  background-color: black;
+}
+
+
 /*
  * Globals
  */
 body {
+  background-color: #b43731;
   padding: 20px;
   color: #72767b;
   font-family: 'Lato', sans-serif;

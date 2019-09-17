@@ -10,3 +10,12 @@ export default {
   name: 'image-caption-slice'
 }
 </script>
+
+<style>
+.full-width-image {
+padding: 150px 50px 0 50px;
+}
+.full-width-image img {
+  box-shadow: 15px 15px 30px black;
+}
+</style>

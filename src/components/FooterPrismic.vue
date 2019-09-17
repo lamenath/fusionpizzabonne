@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
-    <a href="https://prismic.io" target="_blank" rel="noopener">
-      <img class="logo" src="http://labodessons.fr/wp-content/uploads/2013/10/fusionpizzabonne.jpg" alt="Prismic">
+    <a href="https://www.facebook.com/fusionpizzabonne/" target="_blank" rel="noopener">
+    Facebook
     </a>
   </footer>
 </template>
@@ -21,5 +21,9 @@ export default {
 }
 .logo {
   width: 100px;
+}
+
+a {
+  color: white;
 }
 </style>
