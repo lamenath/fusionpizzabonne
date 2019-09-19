@@ -33,6 +33,7 @@ export default {
 .text-section-1col p,
 .text-section-2col p {
   color: white;
+  margin-top: 30px;
 }
 /* Media Queries */
 @media (max-width: 767px) {

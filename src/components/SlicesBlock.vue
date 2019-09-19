@@ -18,6 +18,10 @@
             <template v-else-if="slice.slice_type === 'buttons'">
                 <buttons :slice="slice"/>
             </template>
+            <!-- Record slice component -->
+            <template v-else-if="slice.slice_type === 'record'">
+                <record :slice="slice"/>
+            </template>
         </section>
     </div>
 </template>
@@ -28,6 +32,7 @@ const TextSlice = () => import("./slices/TextSlice.vue");
 const CreditsSlice = () => import("./slices/CreditsSlice.vue");
 const FullWidthImage = () => import("./slices/FullWidthImage.vue");
 const Buttons = () => import("./slices/Buttons.vue");
+const Record = () => import("./slices/Record.vue");
 
 export default {
   props: ['slices'],
@@ -36,7 +41,8 @@ export default {
     TextSlice,
     CreditsSlice,
     FullWidthImage,
-    Buttons
+    Buttons,
+    Record
   },
 }
 </script>

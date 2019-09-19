@@ -1,7 +1,5 @@
 <template>
-  <section class='buttons'>
-	    <prismic-rich-text :field="slice.primary.label"/>
-  </section>
+  <a class="button" :href="slice.primary.link.url">{{slice.primary.label}}</a>
 </template>
 
 <script>
@@ -11,19 +9,24 @@ export default {
 }
 </script>
 
-<style>
-.buttons {
+<style scoped="true">
+.button {
 width: 30%;
 height: 100%;
 background-color: transparent;
-border: 10px solid white;
-border-radius: 3px;
+border: 1px solid white;
+border-radius: 2px;
 text-align: center;
 -webkit-transition-duration: 0.2s; /* Safari */
 transition-duration: 0.2s;
+color: white;
+font-size: 24px;
+padding: 10px 10px 10px 10px;
+margin-left: 40%;
 }
-.buttons:hover {
+.button:hover {
   background-color: white;
+  color:black;
 }
 
 </style>
