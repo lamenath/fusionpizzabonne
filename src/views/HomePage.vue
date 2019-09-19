@@ -1,7 +1,5 @@
 <template>
   <section class="homepage">
-    <!-- Vue tag to add header component -->
-    <header-prismic/>
     <!-- Button to edit document in dashboard -->
     <prismic-edit-button :documentId="documentId"/>
     <div class="container">

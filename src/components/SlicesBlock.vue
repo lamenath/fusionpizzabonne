@@ -6,21 +6,17 @@
             <template v-if="slice.slice_type === 'text_section'">
                 <text-slice :slice="slice"/>
             </template>
-            <!-- Quote slice component -->
-            <template v-else-if="slice.slice_type === 'quote'">
-                <quote-slice :slice="slice"/>
+            <!-- Credits slice component -->
+            <template v-if="slice.slice_type === 'credits_section'">
+                <text-slice :slice="slice"/>
             </template>
             <!-- Full Width Image slice component -->
             <template v-else-if="slice.slice_type === 'full_width_image'">
                 <full-width-image :slice="slice"/>
             </template>
-            <!-- Image Gallery slice component -->
-            <template v-else-if="slice.slice_type === 'image_gallery'">
-                <image-gallery :slice="slice"/>
-            </template>
-            <!-- Image Highlight slice component -->
-            <template v-else-if="slice.slice_type === 'image_highlight'">
-                <image-highlight :slice="slice"/>
+            <!-- Buttons slice component -->
+            <template v-else-if="slice.slice_type === 'buttons'">
+                <buttons :slice="slice"/>
             </template>
         </section>
     </div>
@@ -29,20 +25,18 @@
 <script>
 // Imports for all slices
 const TextSlice = () => import("./slices/TextSlice.vue");
-const QuoteSlice = () => import("./slices/QuoteSlice.vue");
+const CreditsSlice = () => import("./slices/CreditsSlice.vue");
 const FullWidthImage = () => import("./slices/FullWidthImage.vue");
-const ImageGallery = () => import("./slices/ImageGallery.vue");
-const ImageHighlight = () => import("./slices/ImageHighlight.vue");
+const Buttons = () => import("./slices/Buttons.vue");
 
 export default {
   props: ['slices'],
   name: 'slices-block',
   components: {
     TextSlice,
-    QuoteSlice,
+    CreditsSlice,
     FullWidthImage,
-    ImageGallery,
-    ImageHighlight
+    Buttons
   },
 }
 </script>

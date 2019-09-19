@@ -13,9 +13,9 @@ export default {
 
 <style>
 .full-width-image {
-padding: 150px 50px 0 50px;
+padding: 0 50px 0 50px;
 }
 .full-width-image img {
-  box-shadow: 15px 15px 30px black;
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.4);
 }
 </style>
